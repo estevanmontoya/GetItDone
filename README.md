@@ -10,7 +10,7 @@ This application is based off the following tools
 * Nodemon
 
 To run application, use the following command:
-
+```
 npm run dev
-
+```
 It will start Nodemon to watch for development changes as well as sass changes.
