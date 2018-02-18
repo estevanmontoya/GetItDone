@@ -1,0 +1,25 @@
+.logo {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #1abc9c;
+  transition: .5s; }
+
+a.logo:hover {
+  color: #16a085; }
+
+a.navbar-item {
+  transition: .5s; }
+
+a.navbar-item:hover {
+  color: #16a085; }
+
+.index {
+  transition: .2s; }
+  .index h1 {
+    text-transform: full-width; }
+    @media (min-width: 768px) {
+      .index h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin: 20px 0px; } }

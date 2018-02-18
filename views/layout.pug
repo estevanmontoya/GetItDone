@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    title Get it done
+    link(rel='stylesheet', href='/bulma/bulma.css')
+    link(rel='stylesheet', href='/public/styles/style.css')
+  body
+    nav.navbar.has-shadow
+      .navbar-start
+        a.navbar-item.logo(href='/') Get it done
+      .navbar-end
+        a.navbar-item(href='/login') Login
+        a.navbar-item(href='/register') Register
+    
+    .container
+      block content
+    
+    footer
+      section.hero.is-primary
+        .hero-body
+          .container.has-text-centered
+            h1.title
+              a.logo(href='/') Get it done app
+            h2.subtitle
+              | Made by 
+              a(href='http://www.designadvanced.net', target='_blank') Estevan Montoya
