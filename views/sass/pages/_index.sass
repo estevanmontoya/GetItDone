@@ -1,8 +1,36 @@
 .index
-  transition: .2s
-  h1
-    text-transform: full-width
-    +tablet
+  .hero
+    background: linear-gradient(70deg, rgba(41, 128, 185,.75), rgba(44, 62, 80,.75)), url('/public/img/list.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    text-align: center
+    margin: 0px
+    padding: 200px 0px
+    h1
+      color: white
+      font-weight: 300
+      font-size: 30px
+      margin-bottom: 30px
+      +tablet
+        font-size: 50px
+      +desktop
+        font-size: 80px
+    a
+      font-family: $josefin
+      font-weight: 300
       text-transform: uppercase
-      font-size: 20px
-      margin: 20px 0px
+      color: white
+      text-decoration: none
+      background-color: $orange
+      border-radius: 30px
+      transition: .3s
+      box-shadow: 0 10px 20px rgba(0,0,0,.3)
+      padding: 10px 20px
+      font-size: 14px
+      +tablet
+        padding: 15px 25px
+        font-size: 18px
+    a:hover
+      box-shadow: 0 10px 20px rgba(0,0,0,.5)
+      letter-spacing: 2px

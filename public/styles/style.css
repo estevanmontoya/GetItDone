@@ -1,25 +1,86 @@
-.logo {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #1abc9c;
-  transition: .5s; }
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Cardo:400,400i);
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cardo", serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0; }
 
-a.logo:hover {
-  color: #16a085; }
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px; }
 
-a.navbar-item {
-  transition: .5s; }
+nav {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  padding: 18px 0px;
+  text-align: center;
+  margin: 0; }
+  nav ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      list-style: none;
+      margin: 10px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      font-size: 12px; }
+      @media (min-width: 768px) {
+        nav ul li {
+          font-size: 14px; } }
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 400;
+        color: #2c3e50;
+        transition: .08s;
+        padding: 10px; }
+      nav ul li a:hover {
+        color: #2980b9;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+        border-radius: 2px; }
 
-a.navbar-item:hover {
-  color: #16a085; }
-
-.index {
-  transition: .2s; }
-  .index h1 {
-    text-transform: full-width; }
+.index .hero {
+  background: linear-gradient(70deg, rgba(41, 128, 185, 0.75), rgba(44, 62, 80, 0.75)), url("/public/img/list.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0px;
+  padding: 200px 0px; }
+  .index .hero h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 30px; }
     @media (min-width: 768px) {
-      .index h1 {
-        text-transform: uppercase;
-        font-size: 20px;
-        margin: 20px 0px; } }
+      .index .hero h1 {
+        font-size: 50px; } }
+    @media (min-width: 1024px) {
+      .index .hero h1 {
+        font-size: 80px; } }
+  .index .hero a {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: #f39c12;
+    border-radius: 30px;
+    transition: .3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .index .hero a {
+        padding: 15px 25px;
+        font-size: 18px; } }
+  .index .hero a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px; }
