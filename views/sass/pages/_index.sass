@@ -6,16 +6,26 @@
     background-size: cover
     text-align: center
     margin: 0px
-    padding: 200px 0px
+    padding: 50px 0px
+    +tablet
+      padding: 100px 0px
+    +desktop
+      padding: 150px 0px
     h1
       color: white
       font-weight: 300
       font-size: 30px
-      margin-bottom: 30px
+      margin-bottom: 10px
       +tablet
         font-size: 50px
       +desktop
-        font-size: 80px
+        font-size: 60px
+    h2
+      color: white
+      margin-bottom: 40px
+      font-weight: 100
+      font-family: $cardo
+      font-style: italic
     a
       font-family: $josefin
       font-weight: 300
@@ -34,3 +44,66 @@
     a:hover
       box-shadow: 0 10px 20px rgba(0,0,0,.5)
       letter-spacing: 2px
+  .whatItIs
+    background-color: white
+    padding: 30px 0px
+    text-align: center
+    +tablet
+      padding: 50px 0px
+    +desktop
+      padding: 100px 0px
+    h2
+      font-size: 16px
+      +tablet
+        font-size: 20px
+      +desktop
+        font-size: 26px
+        line-height: 1.25em
+    p
+      font-size: 14px
+      font-style: italic
+      font-family: $cardo
+      +tablet
+        font-size: 18px
+      +desktop
+        font-size: 28px
+  .howItWorks
+    text-align: center
+    background-color: #ecf0f1
+    padding: 30px 0px
+    +tablet
+      padding: 50px 0px
+    +desktop
+      padding: 100px 10px
+    h2
+      margin: 0px auto 30px
+      font-size: 30px
+      +tablet
+        margin: 10px auto 30px
+        font-size: 40px
+      +desktop
+        font-size: 50px
+    .boxes
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 20px
+      transition: .3s
+      +tablet
+        grid-template-columns: 1fr 1fr
+        grid-gap: 30px
+      +desktop
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 40px
+      .box1, .box2, .box3, .box4
+        background-color: white
+        box-shadow: 0 1px 0px rgba(0,0,0,.25)
+        border-radius: 3px
+        height: 200px
+        width: auto
+        padding: 15px
+        transition: .4s
+        .title
+          color: $light
+          font-size: 20px
+      .box1:hover, .box2:hover, .box3:hover, .box4:hover
+        box-shadow: 0 2px 7px rgba(0,0,0,.07)

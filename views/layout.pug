@@ -1,13 +1,14 @@
 doctype
 html
   head
-    title Get it done
+    title Task Done App
     link(rel='stylesheet', href='/public/styles/style.css')
+    script(defer, src='https://use.fontawesome.com/releases/v5.0.6/js/all.js')
   body
     nav
       ul
         li
-          a.navbar-item.logo(href='/') Get it done
+          a.navbar-item.logo(href='/') Task Done
         li
           a.navbar-item(href='/login') Login
         li
@@ -16,9 +17,9 @@ html
     block content
     
     footer
-      section
-        h1.title
-          a.logo(href='/') Get it done app
-        h2.subtitle
+      section.footer
+        h2.title
+          a.logo(href='/') Task Done App
+        h3.subtitle
           | Made by 
           a(href='http://www.designadvanced.net', target='_blank') Estevan Montoya

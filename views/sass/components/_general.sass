@@ -10,7 +10,8 @@ $orange: #f39c12
 body
   margin: 0px
   padding: 0px
-  font-family: $cardo
+  font-family: $josefin
+  font-weight: 300
   h1, h2, h3, h4, h5, h6
     font-family: $josefin
     margin: 0
@@ -19,4 +20,12 @@ body
   max-width: 1200px
   width: 100%
   margin: 0px auto
-  padding: 0px
+  // padding: 20px
+  +tablet
+    padding: 20px
+    width: 80%
+  +desktop
+    padding: 0px
+    width: 100%
+.w900
+  max-width: 900px

@@ -2,59 +2,24 @@ extends layout
 
 block content
     section.list
-      section
-        h1.title Let's Do This! 
-        h2.subtitle Consistent action. One step at a time completes an entire journey
-      section
-        input.input.is-medium(type='text', placeholder='What are you doing today?')
-        button.button.is-primary Get 'er done!
-      section
-        table
-          thead
-            tr
-              th Task
-              th Urgency
-              th Complete
-              th Delete
-          tfoot
-            tr
-              th Task
-              th Urgency
-              th Complete
-              th Delete
-          tbody
-            tr
-              th Add database
-              td Semi Urgent
-              td Mark As Complete
-              td Delete This Task
-            tr
-              th Add passport
-              td Urgent
-              td Mark As Complete
-              td Delete This Task
-            tr
-              th Add login page
-              td Semi Urgent
-              td Mark As Complete
-              td Delete This Task
-            tr
-              th Add register page
-              td Semi Urgent
-              td Mark As Complete
-              td Delete This Task
-            tr
-              th Add profile page
-              td Semi Urgent
-              td Mark As Complete
-              td Delete This Task
-            tr
-              th Create CRUD operations
-              td Semi Urgent
-              td Mark As Complete
-              td Delete This Task
-            tr
-              th Add pagination
-              td Semi Urgent
-              td Mark As Complete
-              td Delete This Task
+      .container
+        section.title
+          h1.title Let's Do This! 
+          h2.subtitle Consistent action. One step at a time completes an entire journey
+        section.content
+          section.new-task
+            input.input(type='text', placeholder='What are you doing today?')
+            button Get 'er done!
+          section.task-list
+            div.task
+              p.edit <i class="fas fa-edit"></i>
+              p.task-title This is a sample task
+              .urgeny <i class="fas fa-flag"></i> Not Urgent
+              p.check <i class="far fa-check-square"></i>
+              p.delete <i class="fas fa-trash"></i>
+            div.task
+              p.edit <i class="fas fa-edit"></i>
+              p.task-title This is a sample task
+              .urgeny <i class="fas fa-flag"></i> Not Urgent
+              p.check <i class="far fa-check-square"></i>
+              p.delete <i class="fas fa-trash"></i>

@@ -17,7 +17,7 @@ app.get('/list', (req, res) => {
 })
 
 // Set Port
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log('Your application is running: http://localhost:' + port);
+
+app.listen(2727, () => {
+  console.log('Your application is running: http://localhost:' + 2727);
 });

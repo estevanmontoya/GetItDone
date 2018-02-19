@@ -1,0 +1,53 @@
+section.list
+  section.title
+    padding: 40px 10px
+  section.content
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 50px
+    padding-bottom: 60px
+    +tablet
+      grid-template-columns: 1fr
+    +desktop
+      grid-template-columns: 1fr 3fr
+    section.new-task
+      padding: 0px
+      input
+        width: 100%
+        height: 40px
+        font-size: 14px
+        padding-left: 10px
+        color: black
+        box-shadow: 0 1px 0px rgba(0,0,0,.25)
+        border-radius: 3px
+        border: 1px solid rgba(0,0,0,.25)
+        margin-bottom: 20px
+      button
+        background-color: $dark
+        color: white
+        font-size: 16px
+        padding: 10px 20px
+        border: none
+        border-radius: 3px
+    section.task-list
+      .task
+        display: grid
+        grid-template-columns: 1fr 8fr 2fr 1fr 1fr
+        grid-gap: 20px
+        align-items: center
+        justify-content: space-around
+        background-color: #ecf0f1
+        box-shadow: 0 1px 0px rgba(0,0,0,.25)
+        border-radius: 3px
+        padding: 15px
+        margin-bottom: 20px
+        transition: .4s
+        font-size: 14px
+        p.edit:hover
+          color: #3498db
+        p.task-title
+          font-weight: 400
+        p.check:hover
+          color: #2ecc71
+        p.delete:hover
+          color: #c0392b
