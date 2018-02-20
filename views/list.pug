@@ -10,30 +10,17 @@ block content
         section.content
           section.new-task
             h4 New Task
-            input.input(type='text', placeholder='What are you doing today?')
-            a.button(href='#') Get 'er done!
+            form(action='/insert', method='post')
+              input.input(type='text', name='task', placeholder='What are you doing today?')
+              button(class='button', type='submit') Get 'er done!
           section.task-list
-            .task
-              p.edit <i class="fas fa-edit"></i>
-              p.task-title This is a sample task
-              .urgeny <i class="fas fa-flag"></i> Not Urgent
-              p.check <i class="far fa-check-square"></i>
-              p.delete <i class="fas fa-trash"></i>
-            .task
-              p.edit <i class="fas fa-edit"></i>
-              p.task-title This is a sample task
-              .urgeny <i class="fas fa-flag"></i> Not Urgent
-              p.check <i class="far fa-check-square"></i>
-              p.delete <i class="fas fa-trash"></i>
-            .task
-              p.edit <i class="fas fa-edit"></i>
-              p.task-title This is a sample task
-              .urgeny <i class="fas fa-flag"></i> Not Urgent
-              p.check <i class="far fa-check-square"></i>
-              p.delete <i class="fas fa-trash"></i>
-            .task
-              p.edit <i class="fas fa-edit"></i>
-              p.task-title This is a sample task
-              .urgeny <i class="fas fa-flag"></i> Not Urgent
-              p.check <i class="far fa-check-square"></i>
-              p.delete <i class="fas fa-trash"></i>
+            ol
+              each task, result in tasks
+                li
+                  .task
+                    p.edit <i class="fas fa-edit"></i>
+                    p.task-title task.name
+                    .urgeny <i class="fas fa-flag"></i> Not Urgent
+                    p.check <i class="far fa-check-square"></i>
+                    p.delete <i class="fas fa-trash"></i>
+              

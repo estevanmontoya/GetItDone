@@ -260,7 +260,7 @@ section.list section.content {
       border-radius: 3px;
       border: 1px solid rgba(0, 0, 0, 0.25);
       margin-bottom: 20px; }
-    section.list section.content section.new-task a.button {
+    section.list section.content section.new-task .button {
       background-color: #2c3e50;
       color: white;
       font-size: 12px;
@@ -272,11 +272,11 @@ section.list section.content {
       text-decoration: none;
       transition: .4s;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.13); }
-    section.list section.content section.new-task a.button:hover {
+    section.list section.content section.new-task .button:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       background-color: #ddd;
       color: #2c3e50; }
-    section.list section.content section.new-task a.button:active {
+    section.list section.content section.new-task .button:active {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
   section.list section.content section.task-list .task {
     display: grid;
