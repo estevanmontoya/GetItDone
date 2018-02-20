@@ -1,6 +1,24 @@
 section.list
+  .top
+    background-color: #34495e
   section.title
-    padding: 40px 10px
+    padding: 40px 0px
+    text-align: center
+    color: white
+    +tablet
+      padding: 60px 0px
+    +desktop
+      padding: 80px 0px
+    h1.title
+      font-weight: 300
+      font-size: 28px
+      text-transform: uppercase
+      letter-spacing: 6px
+      margin-bottom: 10px
+    h2.subtitle
+      font-weight: 300
+      font-size: 14px
+      letter-spacing: 2px
   section.content
     display: grid
     grid-template-columns: 1fr
@@ -12,6 +30,11 @@ section.list
       grid-template-columns: 1fr 3fr
     section.new-task
       padding: 0px
+      h4
+        font-weight: 500
+        text-transform: uppercase
+        letter-spacing: 6px
+        margin-bottom: 10px
       input
         width: 100%
         height: 40px
@@ -22,13 +45,24 @@ section.list
         border-radius: 3px
         border: 1px solid rgba(0,0,0,.25)
         margin-bottom: 20px
-      button
+      a.button
         background-color: $dark
         color: white
-        font-size: 16px
+        font-size: 12px
         padding: 10px 20px
         border: none
         border-radius: 3px
+        text-transform: uppercase
+        letter-spacing: 2px
+        text-decoration: none
+        transition: .4s
+        box-shadow: 0px 4px 6px rgba(0,0,0,.13)
+      a.button:hover
+        box-shadow: 0 4px 8px rgba(0,0,0,.1)
+        background-color: #ddd
+        color: $dark
+      a.button:active
+        box-shadow: 0 4px 8px rgba(0,0,0,.4)
     section.task-list
       .task
         display: grid
@@ -37,7 +71,7 @@ section.list
         align-items: center
         justify-content: space-around
         background-color: #ecf0f1
-        box-shadow: 0 1px 0px rgba(0,0,0,.25)
+        box-shadow: 0px 4px 6px rgba(0,0,0,.03)
         border-radius: 3px
         padding: 15px
         margin-bottom: 20px
@@ -51,3 +85,6 @@ section.list
           color: #2ecc71
         p.delete:hover
           color: #c0392b
+      .task:hover
+        box-shadow: 0 4px 8px rgba(0,0,0,.1)
+        background-color: #ddd
